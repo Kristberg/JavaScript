@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript While Loop</h2>
+
+<button id="la">Button</button>
+
+<script>
+
+let Person = {
+  name: 'Sam',
+  sayName: function(){
+     console.log('My name is '+ this.name);
+  }
+};
+Person.sayName = Person.sayName.bind(Person);
+document.getElementById("la").addEventListener('click', Person.sayName);
+</script>
+
+</body>
+</html>

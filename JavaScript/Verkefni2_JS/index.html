@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JavaScript V2</title>
+    </head>
+    <body>
+        <section>
+            <p>málsgrein 1</p>
+            <p>málsgrein 2</p>
+            <div>div 1</div>
+            <p>málsgrein 3</p>
+            <div>div 2</div>
+        </section>
+        <script>
+            document.querySelector("p").style.color = "red";
+            document.querySelectorAll("p")[0].textContent = "paragraph 1"
+            document.querySelectorAll("p")[1].textContent = "paragraph 2"
+            document.querySelectorAll("p")[2].textContent = "paragraph 3"
+            let a = document.querySelector("section")
+             a.innerHTML = "<h1>Verkefni 2.2</h1>" + a.innerHTML
+             
+            let element = document.createElement("p")
+            element.textContent = "Kristberg Rúnar Pálsson"
+            a.append(element)
+        </script>
+    </body>
+</html>
